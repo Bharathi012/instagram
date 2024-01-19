@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-eqiv="x-UA-compatible"content="IE=Rdge">
+<meta name ="viewport"content="width,initial-scale=1.0">
+<link rel='stylesheet' href='instagram.css'>
+<title>insta</title>
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+
+<style>
+.home{
+margin-left:30rem;
+margin-top:5rem;
+}
+#add{
+width:17rem;
+height:1.7rem;
+margin-top:2rem;
+
+}
+#sub{
+width:17rem;
+height:1.7rem;
+
+}
+#lo{
+width:17rem;
+height:1.9rem;
+}
+h1{
+margin-left:4rem;
+font-size:2.5rem;
+}
+#lo{
+border-radius:8px;
+background-color:#34aeeb;
+color:white;
+}
+.home{
+border:1px solid black;
+width:25rem;
+height:25rem;
+
+
+}
+.seco{
+margin-left:3rem;
+}
+.qw iconify-icon{
+margin-left:7rem;
+font-size:3.5rem;
+}
+
+
+</style>
+<body>
+<div class="bgc">
+<div class="home">
+<div class="seco">
+ <form action="alertt.html" onsubmit="return(validation())">
+<div class="add">
+
+ <h1><i>instagram</i></h1>
+ <div class="qw">
+ <iconify-icon icon="skill-icons:instagram"></iconify-icon>
+</div> 
+ <input class="del" id="add"type="text" placeholder="username"><br><br>
+ <input class="del" id="sub" type="password" placeholder="password"><br><br>
+ <button id="lo" onclick="myFun()" type="submit">login</button>
+ 
+</div>
+
+  
+ </form>
+ </div>
+ </div>
+  </div>
+ 
+<script>
+
+function validation(){
+	var username = document.getElementById("add").value ;
+	var password=document.getElementById("sub").value ;
+ 
+ if(username==""){
+	alert("fill your username");
+	return false
+ }
+ else if(password==""){
+	alert("fill your password");
+	return false
+ }
+ 
+ 
+return true
+}	
+
+
+</script>
+</body>
+</html>

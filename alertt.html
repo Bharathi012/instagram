@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-eqiv="x-UA-compatible"content="IE=Rdge">
+<meta name ="viewport"content="width,initial-scale=1.0">
+<title>al</title>
+</head>
+<script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+<style>
+.box{
+border:1px solid black;
+
+width:20rem;
+height:20rem;
+}
+.one iconify-icon{
+font-size:3rem;
+
+}
+.two iconify-icon{
+font-size:3rem;
+
+}
+.three iconify-icon{
+font-size:3rem;
+
+}
+.ins{
+display:flex;
+gap:4rem;
+margin-top:1.5rem;
+}
+#back{
+width:3rem;
+height:3rem;
+}
+
+</style>
+<body>
+<div>
+
+<div class="box">
+<img src="" width="300" id="nu" height="300" >
+
+
+</div>
+
+</div>
+
+<div class="ins" >
+<div class="one">
+<!-- <p>like</p> -->
+
+<iconify-icon icon="ph:heart-bold"  id="para" onclick="yFun()"></iconify-icon>
+<p id="count"></p>
+
+</div>
+<div class="two">
+	<!-- <p>comments</p> -->
+ <iconify-icon icon="uil:comments"></iconify-icon>
+ 
+
+</div>
+<div class="three">
+<iconify-icon icon="ph:folder-simple-plus-light" ></iconify-icon>
+<input type="file" id="plus">
+<button type="submit" onclick="sim()" id="back" >submit</button>
+
+<!-- <p>post</p> -->
+</div>
+</div>
+<script>
+let count=0;
+function yFun(){
+document.getElementById("para").style.color = "red";
+count++
+document.getElementById("count").innerHTML=count;
+}
+let a=document.getElementById("nu")
+let b=document.getElementById("plus")
+let c=document.getElementById("back")
+
+	c.addEventListener("click",()=>{
+		nu.src=URL.createObjectURL(b.files[0])
+		
+	
+	})
+	
+</script>
+</body>
+
+</html>
